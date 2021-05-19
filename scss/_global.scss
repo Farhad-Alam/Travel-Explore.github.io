@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #e5e5e5;
+  font-family: "Oswald", sans-serif;
+}
+p {
+  margin-bottom: 0 !important;
+  color: #7d7987;
+
+  @include respond(sm) {
+    width: 95% !important;
+  }
+}
+h1 {
+  font-family: "Playfair Display", serif;
+}
+.section-3,
+.section-4,
+.section-5,
+.section-6,
+.footer {
+  margin-top: 10rem;
+  padding: 0 22rem;
+
+  @include respond(sm) {
+    padding: 0;
+  }
+  @include respond(md) {
+    padding: 0 ;
+  }
+}
+.section-2 {
+  margin-top: 10rem;
+}
+.card {
+  border-radius: 0.8rem !important;
+  cursor: pointer;
+}

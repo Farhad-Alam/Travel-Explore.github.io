@@ -1,0 +1,79 @@
+.footer {
+  background: #f9f9fb;
+
+  .container {
+    border-bottom: 1px solid #c4c4c4;
+  }
+  .logo-container {
+    width: 3.5rem;
+    height: auto;
+    position: relative;
+    top: 10px;
+
+    .logo:first-child {
+      border: 20px solid #1abe84;
+      border-radius: 100%;
+      position: absolute;
+      bottom: -18px;
+    }
+    .logo:nth-child(2) {
+      border: 10.8px solid #fff;
+      position: absolute;
+      bottom: -9px;
+      left: 9px;
+      border-radius: 100%;
+    }
+    .logo:nth-child(3) {
+      border: 7px solid #f39c12;
+      position: absolute;
+      left: 13px;
+      border-radius: 100%;
+      bottom: -5px;
+    }
+  }
+
+  .col-md-4 {
+    margin-right: 8rem;
+
+    @include respond(md) {
+      margin-right: 2rem;
+    }
+  }
+
+  .col-sm-12{
+
+    @include respond(md) {
+      margin-right: 1.5rem;
+    }
+  }
+  ul {
+    padding: 0;
+  }
+
+  li {
+    color: #848484;
+    list-style: none;
+  }
+
+  .links {
+    margin-top: 1rem;
+
+    a {
+      margin-right: 1.2rem;
+      font-size: 1.5rem;
+      color: #000000;
+    }
+  }
+
+  .row .col-sm-12 {
+    @include respond(sm) {
+      @include flex;
+      margin-bottom: 1rem;
+    }
+  }
+  .col-sm-12 p {
+    @include respond(sm) {
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.section-4 {
+  .container .row {
+    @include respond(sm) {
+      @include flex;
+    }
+
+    .col-sm-12 {
+      
+      @include respond(sm) {
+        @include flex;
+        margin-bottom: 4rem;
+        text-align: center;
+      }
+  }
+
+  .btn-orange {
+    background-color: #fb8f1d;
+    color: #ffffff;
+    border: 1px solid #fb8f1d;
+    border-radius: 7px;
+    padding: 0.4625rem 2.125rem;
+    font-weight: 400;
+    font-family: "Oswald", sans-serif;
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+      background-color: #ffffff;
+      color: #fb8f1d;
+    }
+  }
+  h1 {
+    width: 25rem;
+  }
+}
+
+.col-sm-12{
+  @include respond(md) {
+    @include flex;
+    margin: 1.5rem 0;
+  }
+
+
+}
+}

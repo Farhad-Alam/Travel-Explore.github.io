@@ -1,0 +1,51 @@
+.section-1 {
+  .col-md-5 {
+    @include respond(sm) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .select-box .row {
+    @include respond(sm) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 3rem;
+    }
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    width: 15rem;
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    margin-bottom: 4.25rem;
+  }
+  .b-bottom::after {
+    content: "";
+    border: 1px solid black;
+    width: 1.56rem;
+    margin-top: 0.8rem;
+    display: block;
+
+    @include respond(sm) {
+      margin-left: 35%;
+    }
+  }
+
+  .col-12 {
+    @include respond(sm) {
+      width: 100% !important;
+      text-align: center;
+    }
+
+    ::after {
+      @include respond(sm) {
+        margin: 1rem auto;
+      }
+    }
+  }
+}

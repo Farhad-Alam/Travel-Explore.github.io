@@ -1,0 +1,41 @@
+.section-2 {
+  .col-md-7 {
+    @include respond(sm) {
+      order: 2;
+    }
+  }
+  .col-md-5 {
+    @include respond(sm) {
+      @include flex;
+      margin-bottom: 4rem;
+    }
+
+    p {
+      @include respond(md) {
+        width: auto !important;
+      }
+    }
+  }
+
+  .btn-orange {
+    background-color: #fb8f1d;
+    color: #ffffff;
+    border: 1px solid #fb8f1d;
+    border-radius: 7px;
+    padding: 0.4625rem 2.125rem;
+    font-weight: 400;
+    font-family: "Oswald", sans-serif;
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+      background-color: #ffffff;
+      color: #fb8f1d;
+    }
+  }
+  .col-12 {
+    @include respond(sm) {
+      text-align: center;
+      width: 100%;
+    }
+  }
+}

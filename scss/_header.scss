@@ -1,0 +1,99 @@
+.navbar {
+  .logo-container {
+    width: 3.5rem;
+    height: auto;
+    position: relative;
+    .logo:first-child {
+      border: 20px solid #1abe84;
+      border-radius: 100%;
+      position: absolute;
+      bottom: -18px;
+    }
+    .logo:nth-child(2) {
+      border: 10.8px solid #fff;
+      position: absolute;
+      bottom: -9px;
+      left: 9px;
+      border-radius: 100%;
+    }
+    .logo:nth-child(3) {
+      border: 7px solid #f39c12;
+      position: absolute;
+      left: 12px;
+      border-radius: 100%;
+      bottom: -5px;
+    }
+  }
+
+  // nav-link
+
+  .col{
+    @include respond (sm){
+      @include flex;
+    
+    }
+
+  }
+  .nav-link {
+    color: #b8becd;
+    margin-left: 1rem;
+
+    
+  }
+
+  .nav-item{
+    @include respond (sm){
+      @include flex;
+      margin-bottom: .5rem;
+    }
+  }
+  .nav-link .active{
+    font-weight: 700;
+    
+  }
+
+  // btn desgin
+
+  .l-btn {
+    color: #fb8f1d;
+    border: 1.8px solid #fb8f1d;
+    border-radius: 7px;
+    padding: 0.4625rem 2.125rem;
+    font-weight: 400;
+    font-family: "Oswald", sans-serif;
+    transition: 0.2s ease-in-out;
+    background-color: white;
+
+    // @include respond (sm){
+    //   margin-bottom: 1rem;
+      
+    // }
+    
+
+    &:hover {
+      background-color: #fb8f1d;
+      color: #ffffff;
+    }
+  }
+  .r-btn {
+    background-color: #fb8f1d;
+    color: #ffffff;
+    border: 1px solid #fb8f1d;
+    border-radius: 7px;
+    padding: 0.4625rem 2.125rem;
+    font-weight: 400;
+    font-family: "Oswald", sans-serif;
+    transition: 0.2s ease-in-out;
+   
+
+    &:hover {
+      background-color: #ffffff;
+      color: #fb8f1d;
+    }
+  }
+
+}
+
+
+
+
